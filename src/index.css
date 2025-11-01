@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap');
+
+body {
+  font-family: 'Vazirmatn', sans-serif;
+  /* direction: rtl; */
+}
+
+.landText{
+    animation-name: apear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.blocks{
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.slider{
+  clip-path: path;
+}
+
+.rainbow::before {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -50%;
+    top: -50%;
+    width: 200%;
+    height: 200%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    background-size: 50% 30%;
+    filter: blur(6px);
+    background-image: linear-gradient(#FFF);
+    animation: rotate 4s linear infinite;
+}
+
+.introduceList li::before {
+  content: "✔"; /* یا "✓" یا حتی emoji مثل "✅" */
+  color: blue;
+  margin-right: 8px;
+}
+
+.blob {
+  aspect-ratio: 1;
+  clip-path: shape(from 78.87% 80.20%,curve to 64.93% 88.50% with 69.78% 81.17%,curve to 51.85% 96.84% with 60.08% 95.84%,curve to 35.71% 95.15% with 43.62% 97.84%,curve to 22.10% 86.57% with 27.80% 92.47%,curve to 12.05% 74.06% with 16.40% 80.68%,curve to 10.64% 59.48% with 7.69% 67.44%,curve to 10.83% 44.11% with 13.59% 51.53%,curve to 11.57% 29.90% with 8.08% 36.70%,curve to 22.13% 20.16% with 15.06% 23.10%,curve to 35.12% 13.21% with 29.21% 17.23%,curve to 48.02% 10.79% with 41.03% 9.19%,curve to 61.98% 13.07% with 55.02% 12.40%,curve to 74.92% 17.77% with 68.95% 13.75%,curve to 85.00% 27.83% with 80.90% 21.79%,curve to 89.95% 41.09% with 89.11% 33.88%,curve to 88.67% 54.94% with 90.79% 48.29%,curve to 87.25% 70.41% with 86.54% 61.59%,curve to 78.87% 80.20% with 87.95% 79.23%);
+}
+
+@keyframes apear {
+    from{opacity: 0;};
+    to{opacity: 1;}
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+@import "tailwindcss"
