@@ -7,6 +7,8 @@ import Footer from "./components/Footer"
 import NavBar2 from "./components/NavBar2"
 import InstructorDetails from "./pages/InstructorDetails"
 import TouristAttractions from "./pages/TouristAttractions"
+import Doorm from "./pages/Doorm"
+import Dorm2 from "./pages/Dorm2"
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
           <Route path="/touristAttractions" element={<TouristAttractions />} />
           <Route path="/touristAttractions/:name" element={<TouristAttractionsDetails />} />
           <Route path="/instructors/:name" element={<InstructorDetails />} />
+          <Route path="/dorm" element={<Dorm2 />} />
         </Routes>
       <Footer />
       </BrowserRouter>
