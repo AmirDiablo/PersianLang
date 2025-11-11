@@ -1,6 +1,5 @@
 // src/components/TeamSection.jsx
 import React from 'react';
-import example from "../assets/assets/AI-Enhanced Professional Portraits for a Powerful LinkedIn Presence.jfif"
 import { Instructors } from '../assets/assets/dummyData';
 
 const teamMembers = Instructors
